@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="./fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet" />
+    <title>Start Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- ------------------------------ Search Bar -------------------- -->
+      <div class="search-container" name="q">
+        <div class="search-bar">
+          <span class="text-white">[</span>
+          <span class="text-green">Abdul_Wahab</span>
+          <span class="text-gray">@</span>
+          <span class="text-magenta">Firefox</span>
+          <span class="text-white">]</span>
+          <span class="text-white ml-2"> $ </span>
+        </div>
+        <input
+          class="input-field"
+          type="text"
+          placeholder=" Search The Web ..."
+          name="q"
+          id="myInput"
+        />
+        <div class="all-button">
+          <button class="Batton-text-all" id="button">All</button>
+          <button
+            id="myBtn"
+            class="Batton-text"
+            onclick="search('https://duckduckgo.com')"
+          >
+            DuckDuckGo
+          </button>
+          <button
+            class="Batton-text-yandex"
+            onclick="search('https://yandex.com/search/')"
+          >
+            Yandex
+          </button>
+          <button
+            class="Batton-text-google"
+            onclick="search('https://www.google.com/search')"
+          >
+            Google
+          </button>
+          <button
+            class="Batton-text-youtube"
+            onclick="search('https://www.youtube.com/results')"
+          >
+            Youtube
+          </button>
+          <button
+            class="Batton-text-wikipedia"
+            onclick="search('https://en.wikipedia.org/w/index.php')"
+          >
+            Wikipedia
+          </button>
+          <button
+            class="Batton-text-you"
+            onclick="search('https://you.com/search')"
+          >
+            You.com
+          </button>
+          <button
+            class="Batton-text-phind"
+            onclick="search('https://www.phind.com/search')"
+          >
+            Phind
+          </button>
+          <button
+            class="Batton-text-metager"
+            onclick="search('https://metager.org/meta/meta.ger3')"
+          >
+            MetaGer
+          </button>
+        </div>
+      </div>
+      <div class="flex-container">
+        <!-- ------------------------------ Application ---------------------->
+        <div class="flex-items">
+          <h2 class="application-header">Application</h2>
+          <ul>
+            <li>
+              <a
+                class="a-link"
+                href="https://account.proton.me/login"
+                target="_blank"
+                >Proton Mail</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://mail.google.com/" target="_blank"
+                >Gmail</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://outlook.live.com/" target="_blank"
+                >Outlook Mail</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://yandex.com/maps/" target="_blank"
+                >Yandex Maps</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.google.com/maps/"
+                target="_blank"
+                >Google Maps</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.bing.com/maps/"
+                target="_blank"
+                >Bing Maps</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://drive.google.com/" target="_blank"
+                >gDrive</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://docs.google.com/document/u/0/"
+                target="_blank"
+                >Docs</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://docs.google.com/spreadsheets/u/0/"
+                target="_blank"
+                >Sheets</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://webwhiteboard.com/"
+                target="_blank"
+                >Whiteboard</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.blogger.com/dashboard/reading?"
+                target="_blank"
+                >Blogger</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://meet.google.com/" target="_blank"
+                >Meet</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://zoom.us/test" target="_blank"
+                >Zoom</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://translate.yandex.com/"
+                target="_blank"
+                >YTranslator</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://translate.google.com/"
+                target="_blank"
+                >GTranslator</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="a-link"
+                href="https://www.bing.com/translator/"
+                target="_blank"
+                >BTranslator</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://scholar.google.com/"
+                target="_blank"
+                >Scholar</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="a-link"
+                href="https://www.digitalsamaritan.co/"
+                target="_blank"
+                >All_Tools_List</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ------------------------------ Search -------------------- -->
+        <div class="flex-items">
+          <h2 class="application-header" style="color: #62e0e2">Search</h2>
+          <ul>
+            <li>
+              <a class="a-link" href="https://metager.org/" target="_blank"
+                >Metager</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.bing.com/" target="_blank"
+                >Bing</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://search.brave.com/" target="_blank"
+                >Brave</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.startpage.com/"
+                target="_blank"
+                >StartPage</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.qwant.com/" target="_blank"
+                >Qwant</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.yahoo.com/" target="_blank"
+                >Yahoo</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://web.archive.org/" target="_blank"
+                >Archive.org</a
+              >
+            </li>
+          </ul>
+          <!-- ------------------------------ Vidoes -------------------- -->
+          <h2 class="application-header" style="color: #85c742">Tools</h2>
+          <ul>
+            <li>
+              <a
+                class="a-link"
+                href="https://paste.mozilla.org/"
+                target="_blank"
+                >PasteBin</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://bsbk.portal.gov.bd/apps/bangla-converter/index.html"
+                target="_blank"
+                >Bijoy to Uni</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://spell.bangla.gov.bd/"
+                target="_blank"
+                >Spell Bangla</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.prepostseo.com/"
+                target="_blank"
+                >Prepostseo</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.virustotal.com/gui/home/upload"
+                target="_blank"
+                >Virustotal</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://you.regettingold.com/"
+                target="_blank"
+                >Age Cal</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://urlscan.io/" target="_blank"
+                >urlScan</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://webtopdf.com/" target="_blank"
+                >WebtoPDF</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://tinywow.com/" target="_blank"
+                >PDFTools</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.ilovepdf.com/" target="_blank"
+                >ilovepdf</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ------------------------------ AI Tools -------------------- -->
+        <div class="flex-items">
+          <h2 class="application-header" style="color: #16a180">AI Tools</h2>
+          <ul>
+            <li>
+              <a class="a-link" href="https://chat.openai.com/" target="_blank"
+                >ChatGTP</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://bard.google.com/chat"
+                target="_blank"
+                >Bard</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://you.com/" target="_blank"
+                >You Search</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.phind.com/" target="_blank"
+                >Phind Search</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.getdevkit.com/devgpt"
+                target="_blank"
+                >Getdevkit</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.perplexity.ai/"
+                target="_blank"
+                >Perplexity.ai</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.blackbox.ai/" target="_blank"
+                >Blackbox.ai</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.perplexity.ai/"
+                target="_blank"
+                >Perplexity.ai</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://beta.character.ai/"
+                target="_blank"
+                >Character.ai</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.commontools.org/"
+                target="_blank"
+                >AI Tools List</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://ignacio-velasquez.notion.site/2-500-ChatGPT-Prompt-Templates-d9541e901b2b4e8f800e819bdc0256da"
+                target="_blank"
+                >GPT Templates</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://flowgpt.com/" target="_blank"
+                >Flow GPT</a
+              >
+            </li>
+          </ul>
+          <!-- ------------------------------ Tools -------------------- -->
+          <h2 class="application-header" style="color: #176dde">PDF</h2>
+          <ul>
+            <li>
+              <a class="a-link" href="https://z-library.se/" target="_blank"
+                >z-library</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://libgen.rocks/index.php"
+                target="_blank"
+                >Lib Genesis</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://annas-archive.org/"
+                target="_blank"
+                >Annas Archive</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="http://www.pathagar.org/" target="_blank"
+                >Pathagar</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.icsbook.info/" target="_blank"
+                >Book.Info</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ------------------------------ Social-------------------- -->
+        <div class="flex-items">
+          <h2 class="application-header" style="color: azure">Social</h2>
+          <ul>
+            <li>
+              <a class="a-link" href="https://twitter.com/home" target="_blank"
+                >X (Twitter)</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://web.telegram.org/a/"
+                target="_blank"
+                >Telegram</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.facebook.com/" target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://web.whatsapp.com/" target="_blank"
+                >Whatsapp</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.linkedin.com/" target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://bn.quora.com/" target="_blank"
+                >Quora</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://discord.com/" target="_blank"
+                >Discord</a
+              >
+            </li>
+          </ul>
+          <!-- ------------------------------ Tools 2 -------------------- -->
+          <h2 class="application-header" style="color: #c78942">Software</h2>
+          <ul>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.opensourcealternative.to/"
+                target="_blank"
+                >Open Source</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://distrowatch.com/" target="_blank"
+                >Distrowatch</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.fileeagle.com/software"
+                target="_blank"
+                >File Eagle</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.osboxes.org/" target="_blank"
+                >OsBoxes</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://flathub.org/" target="_blank"
+                >Flathub</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://appimage.org/" target="_blank"
+                >AppImage</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://libraries.io/" target="_blank"
+                >libraries.io</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://getintopc.com/?id=001175442282"
+                target="_blank"
+                >GetintoPc</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ------------------------------ DEV Community -------------------- -->
+        <div class="flex-items">
+          <h2 class="application-header" style="color: #677fd1">Dev</h2>
+          <ul>
+            <li>
+              <a class="a-link" href="https://dev.to/" target="_blank"
+                >Dev.to</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://stackoverflow.com/"
+                target="_blank"
+                >Stackoverflow</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.github.com" target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://about.gitlab.com/" target="_blank"
+                >GitLab</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://vscode.dev/" target="_blank"
+                >Vscode</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://codepen.io/" target="_blank"
+                >Codepen</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://codesandbox.io/" target="_blank"
+                >CodeSandBox</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://stackblitz.com/" target="_blank"
+                >Stackblitz</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://codebeautify.org/" target="_blank"
+                >Code Beautify</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://replit.com/" target="_blank"
+                >Replit</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://ideone.com/" target="_blank"
+                >Ideone</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.onlinegdb.com/"
+                target="_blank"
+                >OnlineGDB</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.online-python.com/"
+                target="_blank"
+                >Python Compiler</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default"
+                target="_blank"
+                >Html</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_editor"
+                target="_blank"
+                >Bootstrap 5</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://play.tailwindcss.com/"
+                target="_blank"
+                >Tailwind CSS</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://tohtml.com/" target="_blank"
+                >Syntax Highlighting</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ------------------------------ Algorithms -------------------- -->
+        <div class="flex-items">
+          <h2 class="application-header" style="color: #6f5de1">Algorithms</h2>
+          <ul>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.techiedelight.com/"
+                target="_blank"
+                >Techiedelight</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://stackoverflow.com/"
+                target="_blank"
+                >Stackoverflow</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://cp-algorithms.com/"
+                target="_blank"
+                >Cp-Algorithms</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="http://www.shafaetsplanet.com/"
+                target="_blank"
+                >Shafaets Planet</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://baps-bgd.github.io/camp/"
+                target="_blank"
+                >BAPS</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"
+                target="_blank"
+                >DS Visualizations</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://codeforces.com/catalog"
+                target="_blank"
+                >Cp-Catalog</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://cp-algorithms.com/"
+                target="_blank"
+                >Cp-Algorithms</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://discuss.codechef.com/t/data-structures-and-algorithms/6599"
+                target="_blank"
+                >DS & Algorithms</a
+              >
+            </li>
+          </ul>
+          <!-- ------------------------------ tools 3 -------------------- -->
+          <h2 class="application-header" style="color: #6f5de1">Downloader</h2>
+          <ul>
+            <li>
+              <a
+                class="a-link"
+                href="https://en.savefrom.net/391GA/#url=about%3Anewtab&utm_source=ff&utm_medium=extensions&utm_campaign=bookmarklet"
+                target="_blank"
+                >Savefrom.net</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://ddownr.com/" target="_blank"
+                >DDownr</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://ssstwitter.com/" target="_blank"
+                >twitter Videos</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://downsub.com/" target="_blank"
+                >Downsub</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://downloader.la/" target="_blank"
+                >Downloader.la</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://getpaidstock.com/" target="_blank"
+                >GetStock</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ------------------------------ Study -------------------- -->
+        <div class="flex-items">
+          <h2 class="application-header" style="color: #5fbdff">Study</h2>
+          <ul>
+            <li>
+              <a class="a-link" href="https://roadmap.sh/" target="_blank"
+                >Roadmap.sh</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.kashipara.com/"
+                target="_blank"
+                >Project Source</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://awesomeopensource.com/"
+                target="_blank"
+                >Open Source</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://lecoupa.github.io/awesome-cheatsheets/"
+                target="_blank"
+                >Cheat Sheet</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.w3schools.com/"
+                target="_blank"
+                >W3schools</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.codesdope.com/"
+                target="_blank"
+                >CodesDope</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.tutorialsteacher.com/"
+                target="_blank"
+                >TutorialsTeacher</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.tutorialspoint.com/index.htm"
+                target="_blank"
+                >TutorialsPoint</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.geeksforgeeks.org/"
+                target="_blank"
+                >GeeksforGeeks</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.java67.com/2018/02/5-free-cpp-courses-to-learn-programming.html"
+                target="_blank"
+                >Java67</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.guru99.com/" target="_blank"
+                >Guru99</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.brainkart.com/"
+                target="_blank"
+                >BrainKart</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://realpython.com/" target="_blank"
+                >Python Learn</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://linuxjourney.com/" target="_blank"
+                >learn Linux</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ------------------------------ _CP -------------------- -->
+        <div class="flex-items">
+          <h2 class="application-header" style="color: #a3dd7d">_CP</h2>
+          <ul>
+            <li>
+              <a class="a-link" href="https://leetcode.com/" target="_blank"
+                >Leetcode</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://onlinejudge.org/" target="_blank"
+                >Uva</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://lightoj.com/auth/login"
+                target="_blank"
+                >LightOJ</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://codeforces.com/" target="_blank"
+                >Codeforces</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.codechef.com/" target="_blank"
+                >Codechef</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.hackerrank.com/"
+                target="_blank"
+                >Hackerrank</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.hackerearth.com/challenges/"
+                target="_blank"
+                >Hackerearth</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://vjudge.net/" target="_blank"
+                >Vjudge</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.coderbyte.com/"
+                target="_blank"
+                >Coderbyte</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.interviewbit.com/"
+                target="_blank"
+                >Interviewbit</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://exercism.org/" target="_blank"
+                >Exercism</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.kaggle.com/" target="_blank"
+                >Kaggle</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://huggingface.co/" target="_blank"
+                >HuggingFace</a
+              >
+            </li>
+          </ul>
+          <!-- ------------------------------ Vidoes -------------------- -->
+          <h2 class="application-header" style="color: #e44d6d">Vidoes</h2>
+          <ul>
+            <li>
+              <a class="a-link" href="https://rumble.com/" target="_blank"
+                >Rumble</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.youtube.com/" target="_blank"
+                >YouTube</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://odysee.com/" target="_blank"
+                >Odysee</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ------------------------------ Blog -------------------- -->
+        <div class="flex-items">
+          <h2 class="application-header" style="color: #2f99b1">Blog</h2>
+          <ul>
+            <li>
+              <a class="a-link" href="https://medium.com/" target="_blank"
+                >Medium</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://news.ycombinator.com/"
+                target="_blank"
+                >Hacker News</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.cnet.com/" target="_blank"
+                >CNet</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.techtunes.io/" target="_blank"
+                >Techtunes</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://trickbd.com/" target="_blank"
+                >Trickbd</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="http://www.chhatrasangbadbd.com/"
+                target="_blank"
+                >Chhatrasangbad</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="http://youthwavebd.com/" target="_blank"
+                >Youth Wave</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.kishorkanthabd.com/"
+                target="_blank"
+                >Kishor Kantha</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.byapon.com/" target="_blank"
+                >Byapon</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://roar.media/bangla/"
+                target="_blank"
+                >Roar Media</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.byapon.com/" target="_blank"
+                >Byapon</a
+              >
+            </li>
+
+            <li>
+              <a class="a-link" href="https://fateh24.com/" target="_blank"
+                >Fateh24</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="http://alaponblog.com/" target="_blank"
+                >Alapon Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="http://www.onnoekdiganta.com/"
+                target="_blank"
+                >Onnoek Diganta</a
+              >
+            </li>
+          </ul>
+          <!-- ------------------------------ Tools 4 -------------------- -->
+          <h2 class="application-header" style="color: #85c742">Torrent</h2>
+          <ul>
+            <li>
+              <a class="a-link" href="https://1337x.to/home/" target="_blank"
+                >1337x.to</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://thepiratebay.org/index.html"
+                target="_blank"
+                >ThePirateBay</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- ------------------------------ News Paper -------------------- -->
+        <div class="flex-items">
+          <h2 class="application-header" style="color: #f9a04d">News</h2>
+          <ul>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.dailynayadiganta.com/"
+                target="_blank"
+                >Nayadiganta</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="http://www.enayadiganta.com/"
+                target="_blank"
+                >E-Nayadiganta</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.dailysangram.com/"
+                target="_blank"
+                >Sangram</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://epaper.dailysangram.com/2023/11/22/page-01"
+                target="_blank"
+                >E-Sangram</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://amar-desh24.com/bangla/"
+                target="_blank"
+                >Amar-Desh24</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://dailyinqilab.com/" target="_blank"
+                >Daily Inqilab</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://mzamin.com/" target="_blank"
+                >ManabZamin</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.jaijaidinbd.com/"
+                target="_blank"
+                >JaiJaidin</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.anandabazar.com/"
+                target="_blank"
+                >AnandaBazar</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://timesofindia.indiatimes.com/"
+                target="_blank"
+                >TimesofIndia</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.aljazeera.com/"
+                target="_blank"
+                >AlJazeera</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.middleeasteye.net/"
+                target="_blank"
+                >Middle East Eye</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.trtworld.com/" target="_blank"
+                >TRT World</a
+              >
+            </li>
+            <li>
+              <a class="a-link" href="https://www.rt.com/" target="_blank"
+                >RT News</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.theguardian.com/international"
+                target="_blank"
+                >The Guardian</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.washingtonpost.com/"
+                target="_blank"
+                >Washington Post</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://dailybanglanewspapers.com/"
+                target="_blank"
+                >All News Paper</a
+              >
+            </li>
+            <li>
+              <a
+                class="a-link"
+                href="https://www.w3newspapers.com/"
+                target="_blank"
+                >World News</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!----------------------------------- text editor -->
+      <div class="editorx">
+        <div class="tools-area">
+          <button id="bold" class="tools-btn">
+            <i class="fa-solid fa-bold"></i>
+          </button>
+          <button id="italic" class="tools-btn">
+            <i class="fa-solid fa-italic"></i>
+          </button>
+          <button id="underline" class="tools-btn">
+            <i class="fa-solid fa-underline"></i>
+          </button>
+          <button id="strikethrough" class="tools-btn">
+            <i class="fa-solid fa-strikethrough"></i>
+          </button>
+          <button id="justifyLeft" class="tools-btn">
+            <i class="fa-solid fa-align-right"></i>
+          </button>
+          <button id="justifyRight" class="tools-btn">
+            <i class="fa-solid fa-align-left"></i>
+          </button>
+          <button id="justifyFull" class="tools-btn">
+            <i class="fa-solid fa-align-justify"></i>
+          </button>
+          <button id="justifyCenter" class="tools-btn">
+            <i class="fa-solid fa-align-center"></i>
+          </button>
+          <button id="unorderedList" class="tools-btn">
+            <i class="fa-solid fa-list-ul"></i>
+          </button>
+          <button id="increaseFontSize" class="tools-btn">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <button id="decreaseFontSize" class="tools-btn">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+
+          <button id="copyBtn" class="tools-btn">
+            <i class="fa-regular fa-clipboard"></i>
+          </button>
+          <button id="resetBtn" class="tools-btn">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+          <button id="saveFileButton" class="tools-btn">
+            <i class="fas fa-save"></i>
+          </button>
+        </div>
+        <div class="txt-area">
+          <div contenteditable class="text" id="text" rows="20"></div>
+        </div>
+      </div>
+      <!-- footer -->
+      <hr class="line" />
+      <div class="flex-container2">
+        <div class="code-name">Designed by Abdul Wahab</div>
+        <div class="clock-container">
+          <div class="ml-3">Now</div>
+          <div id="clock" class="clock"></div>
+          <div class="ml-3">On</div>
+          <div id="calendar" class="calendar"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      function search(searchUrl) {
+        var inputElement = document.querySelector('input[name="q"]');
+        var query = inputElement.value.trim();
+
+        if (query !== "") {
+          if (searchUrl.includes("yandex")) {
+            // For Yandex, use the 'text' parameter
+            fullUrl = searchUrl + "?text=" + encodeURIComponent(query);
+          } else if (searchUrl.includes("youtube")) {
+            // For Yandex, use the 'text' parameter
+            fullUrl = searchUrl + "?search_query=" + encodeURIComponent(query);
+          } else if (searchUrl.includes("wikipedia")) {
+            // For Yandex, use the 'text' parameter
+            fullUrl = searchUrl + "?search=" + encodeURIComponent(query);
+          } else {
+            // For other search engines, use the 'q' parameter
+            fullUrl = searchUrl + "?q=" + encodeURIComponent(query);
+          }
+          // Open a new window/tab with the combined URL
+          window.open(fullUrl, "_blank");
+        } else {
+          alert("Please enter a search query.");
+        }
+        // Clear the input field after processing
+        inputElement.value = "";
+      }
+      var input = document.getElementById("myInput");
+      input.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.getElementById("myBtn").click();
+        }
+      });
+      // <!-- ------------------------------ All Search -------------------- -->
+      var searchEngines = [
+        "https://www.bing.com/search?q=",
+        "https://www.youtube.com/results?search_query=",
+        "https://www.google.com/search?q=",
+        "https://yandex.com/search?text=",
+        "https://duckduckgo.com/?q=",
+      ];
+
+      var $button = document.getElementById("button");
+      var $searchInput = document.getElementById("myInput");
+
+      $button.addEventListener("click", function () {
+        var query = $searchInput.value;
+        if (query.trim() !== "") {
+          for (i in searchEngines) {
+            var searchEngine = searchEngines[i];
+            var url = searchEngine + encodeURIComponent(query);
+            var $a = document.createElement("a");
+            $a.setAttribute("href", url);
+            $a.setAttribute("target", "_blank");
+            $a.click();
+          }
+        }
+        $searchInput.value = "";
+      });
+    </script>
+  </body>
+</html>
