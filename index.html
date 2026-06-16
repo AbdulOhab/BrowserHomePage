@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OpenSearch — a sleek search-only browser homepage with multiple search engines and keyboard shortcuts." />
+  <link rel="icon" type="image/png" href="assets/logo.svg" />
+  <title>OpenSearch</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind utility classes (CDN) + Nord theme / custom styles -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body class="min-h-screen text-nord-6 overflow-x-hidden">
+  <div class="os-wrap">
+    <!-- Hero (vertically centered) -->
+    <main class="os-hero">
+      <!-- Brand -->
+      <header class="text-center mb-8 fade-in">
+        <h1 class="brand-title cursor-pointer hover:text-nord-9 transition-colors"
+          onclick="window.location.reload()">OpenSearch</h1>
+        <p class="brand-sub">Search the whole web, your way</p>
+      </header>
+
+      <!-- Search Box (the hero element) -->
+      <div class="search-box fade-in">
+        <button class="search-icon-btn" type="button" title="Search (Enter)" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" />
+          </svg>
+        </button>
+        <textarea id="searchInput" class="search-box-input" rows="3"
+          placeholder="Type a URL or search ..."
+          autocomplete="off" spellcheck="false" dir="auto" lang="en"></textarea>
+        <button id="searchSubmit" class="send-btn" type="button" title="Search (Enter)" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5" /><path d="m5 12 7-7 7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Engine chips -->
+      <div class="engine-chips fade-in">
+        <button class="search-engine-btn" data-engine="Google" id="searchGoogle">
+          <span class="chip-ico">G</span><span class="chip-name">Google</span>
+        </button>
+        <button class="search-engine-btn" data-engine="DuckDuckGo" id="searchDuckDuckGo">
+          <span class="chip-ico">D</span><span class="chip-name">DuckDuckGo</span>
+        </button>
+        <button class="search-engine-btn" data-engine="Brave" id="searchBrave">
+          <span class="chip-ico">Br</span><span class="chip-name">Brave</span>
+        </button>
+        <button class="search-engine-btn" data-engine="Startpage" id="searchStartpage">
+          <span class="chip-ico">S</span><span class="chip-name">Startpage</span>
+        </button>
+        <button class="search-engine-btn" data-engine="YouTube" id="searchYouTube">
+          <span class="chip-ico">▶</span><span class="chip-name">YouTube</span>
+        </button>
+        <button class="search-engine-btn" data-engine="Yandex" id="searchYandex">
+          <span class="chip-ico">Y</span><span class="chip-name">Yandex</span>
+        </button>
+        <button class="search-engine-btn" data-engine="Wikipedia" id="searchWikipedia">
+          <span class="chip-ico">📖</span><span class="chip-name">Wikipedia</span>
+        </button>
+        <button class="search-engine-btn" data-engine="QuackQuackGo" id="searchQuackQuackGo">
+          <span class="chip-ico">Q</span><span class="chip-name">QuackGo</span>
+        </button>
+        <button class="search-engine-btn" id="searchAllEngines">
+          <span class="chip-ico">✦</span><span class="chip-name">All Engines</span>
+        </button>
+      </div>
+
+      <!-- Hints -->
+      <p class="hints fade-in">
+        <kbd>Enter</kbd> Google •
+        <kbd>Ctrl+Enter</kbd> all engines •
+        <kbd>Esc</kbd> clear
+      </p>
+
+      <!-- AI Quick Links -->
+      <p class="ai-links fade-in">
+        <a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a> •
+        <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a> •
+        <a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a> •
+        <a href="https://perplexity.ai" target="_blank" rel="noopener">Perplexity</a> •
+        <a href="https://copilot.microsoft.com" target="_blank" rel="noopener">Copilot</a>
+      </p>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="os-footer fade-in">
+      <p>
+        © 2026 OpenSearch.
+        <a href="https://github.com/AbdulOhab/open-bookmarks-homepage" target="_blank" rel="noopener"
+          class="os-link">View Source on GitHub</a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+
+</html>
