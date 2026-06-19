@@ -70,6 +70,16 @@ function autoResize() {
   searchInput.style.height = searchInput.scrollHeight + "px";
 }
 
+// Toggle the left button: search icon when empty, ✕ clear icon when there's text.
+function updateClearButton() {
+  const btn = document.getElementById("searchIconBtn");
+  if (!btn) return;
+  const hasText = searchInput.value.length > 0;
+  btn.classList.toggle("is-clear", hasText);
+  btn.title = hasText ? "Clear (Esc)" : "Search (Enter)";
+  btn.setAttribute("aria-label", hasText ? "Clear" : "Search");
+}
+
 function buildSearchUrl(engine, query) {
   return `${engine.url}?${engine.parameter}=${encodeURIComponent(query)}`;
 }
@@ -294,6 +304,7 @@ function setupSearchEngineListeners() {
         if (engine) {
           searchInput.value = "@" + engine.aliases[0] + " ";
           autoResize();
+          updateClearButton();
           searchInput.focus();
           searchInput.setSelectionRange(searchInput.value.length, searchInput.value.length);
         }
@@ -347,6 +358,7 @@ function handleSearchKeydown(e) {
       e.preventDefault();
       searchInput.value = "";
       autoResize();
+      updateClearButton();
       searchInput.focus();
       break;
   }
@@ -372,7 +384,10 @@ function init() {
     return;
   }
   searchInput.addEventListener("keydown", handleSearchKeydown);
-  searchInput.addEventListener("input", autoResize);
+  searchInput.addEventListener("input", () => {
+    autoResize();
+    updateClearButton();
+  });
   document.addEventListener("keydown", handleGlobalKeydown);
   setupSearchEngineListeners();
 
@@ -382,9 +397,18 @@ function init() {
     submitBtn.addEventListener("click", () => searchOrNavigate(getQuery()));
   }
 
-  // Left search-icon button focuses the input.
-  const iconBtn = document.querySelector(".search-icon-btn");
-  if (iconBtn) iconBtn.addEventListener("click", () => searchInput.focus());
+  // Left button: ✕ clears the box when there's text, otherwise focuses it.
+  const iconBtn = document.getElementById("searchIconBtn");
+  if (iconBtn) {
+    iconBtn.addEventListener("click", () => {
+      if (searchInput.value.length > 0) {
+        searchInput.value = "";
+        autoResize();
+        updateClearButton();
+      }
+      searchInput.focus();
+    });
+  }
 
   // Footer "Help" link opens the feature-guide modal.
   const helpLink = document.getElementById("osHelp");
@@ -396,6 +420,7 @@ function init() {
   }
 
   autoResize();
+  updateClearButton();
   searchInput.focus();
 }
 

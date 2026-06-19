@@ -125,6 +125,15 @@ body {
 
 .search-icon-btn svg { width: 18px; height: 18px; }
 
+/* Toggle: search icon when empty, ✕ clear icon once there is text. */
+.search-icon-btn .ico-clear { display: none; }
+.search-icon-btn.is-clear .ico-search { display: none; }
+.search-icon-btn.is-clear .ico-clear { display: block; }
+.search-icon-btn.is-clear:hover {
+  background: var(--nord-11);
+  color: var(--nord-6);
+}
+
 /* Input */
 .search-box-input {
   width: 100%;
