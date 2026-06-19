@@ -251,25 +251,6 @@ body {
   background: var(--nord-11) !important;
 }
 
-/* ---------- Hints ---------- */
-.hints {
-  margin-top: 1.4rem;
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--nord-4);
-  opacity: 0.55;
-}
-
-.hints kbd {
-  padding: 1px 7px;
-  margin: 0 1px;
-  background: var(--nord-2);
-  color: var(--nord-8);
-  border-radius: 5px;
-  font-size: 0.72rem;
-  font-family: inherit;
-}
-
 /* ---------- AI Quick Links ---------- */
 .ai-links-title {
   margin-top: 1rem;
@@ -324,6 +305,25 @@ body {
 }
 
 .os-link:hover { color: var(--nord-14); }
+
+/* ---------- Modal (help guide / engine picker) ---------- */
+.os-modal kbd {
+  padding: 1px 7px;
+  margin: 0 1px;
+  background: var(--nord-2);
+  color: var(--nord-8);
+  border-radius: 5px;
+  font-size: 0.78rem;
+  font-family: inherit;
+}
+
+.os-modal code {
+  color: var(--nord-8);
+  background: rgba(67, 76, 94, 0.5);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
 
 /* =====================================================================
    Nord utility classes (used by index.html and main.js modal)
