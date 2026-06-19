@@ -16,8 +16,8 @@ const searchEngines = [
   { name: "Wikipedia",    url: "https://en.wikipedia.org/wiki/Special:Search", parameter: "search" },
 ];
 
-// Engine used for a plain Enter (matches the UI hint: "Enter to search Google").
-const DEFAULT_ENGINE = "Google";
+// Engine used for a plain Enter (matches the UI hint: "Enter to search DuckDuckGo").
+const DEFAULT_ENGINE = "DuckDuckGo";
 
 const searchInput = document.getElementById("searchInput");
 
