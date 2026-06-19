@@ -288,8 +288,15 @@ function setupSearchEngineListeners() {
     }
     btn.addEventListener("click", () => {
       const query = getQuery();
-      if (!query) {
-        alert("Please enter a search query.");
+      // Empty box (or a bare @alias with no text) → drop this engine's alias in
+      // so the user can type a query, instead of showing an alert.
+      if (!parseEnginePrefix(query).text) {
+        if (engine) {
+          searchInput.value = "@" + engine.aliases[0] + " ";
+          autoResize();
+          searchInput.focus();
+          searchInput.setSelectionRange(searchInput.value.length, searchInput.value.length);
+        }
         return;
       }
       if (engine) openUrl(buildSearchUrl(engine, query));
@@ -301,8 +308,8 @@ function setupSearchEngineListeners() {
   if (allBtn) {
     allBtn.addEventListener("click", () => {
       const query = getQuery();
-      if (!query) {
-        alert("Please enter a search query.");
+      if (!parseEnginePrefix(query).text) {
+        searchInput.focus();
         return;
       }
       allBtn.setAttribute("disabled", "true");
