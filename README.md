@@ -1,23 +1,39 @@
-# Browser Home Page - OpenSearch
+# Browser Home Page - OpenSearch v3.0
 
-A sleek, modern, search-only browser homepage designed for efficiency. It features a beautiful Nord theme, an AI-chat-style auto-resizing search box, and quick access to multiple search engines.
+A browser homepage built around a single search box.
 
-## Features
+![OpenSearch homepage](assets/homepage.png)
 
-- **Multiple Search Engines**: Seamlessly search using Google (default), DuckDuckGo, Brave, Startpage, YouTube, Yandex, Wikipedia, or QuackQuackGo.
-- **All Engines Search**: Search your query across all selected engines simultaneously.
-- **AI Quick Links**: Direct quick links to top AI platforms (ChatGPT, Claude, Gemini, Perplexity, Copilot) below the search hints.
-- **Modern UI**: A clean, distraction-free interface utilizing the [Nord Theme](https://www.nordtheme.com/). Includes an auto-resizing, AI-chat-like search input box.
-- **Keyboard Shortcuts**:
-  - `Enter`: Search using the default engine (Google).
-  - `Ctrl + Enter`: Search using "All Engines".
-  - `Esc`: Clear the search box.
+## Usage
 
-## Getting Started
+Type a query and press `Enter` to search DuckDuckGo. Type a URL like `github.com` and it opens directly instead of searching. Prefix a query with `@alias` to pick a different engine:
 
-Since this is a simple vanilla HTML/CSS/JS project, no build tools or server runtime are required!
+| Engine       | Aliases              |
+|--------------|----------------------|
+| Google       | @google, @g          |
+| DuckDuckGo   | @ddg, @duck          |
+| Brave        | @brave, @br          |
+| Startpage    | @startpage, @sp      |
+| YouTube      | @youtube, @yt        |
+| Yandex       | @yandex, @ya         |
+| Wikipedia    | @wiki, @w            |
+| QuackQuackGo | @quack, @qq, @q      |
 
-1. Clone or download this project.
-2. Open the `index.html` file directly in any web browser.
-3. **Tip:** Set this `index.html` file as your browser's default "Startup page" or "New Tab" page for quick access.
+"All Engines" opens a picker where you can choose which engines to search at once. Tabs open with a short stagger to avoid popup blockers.
 
+Keyboard shortcuts:
+
+- `Enter`: search DuckDuckGo (or whichever engine you prefixed)
+- `Ctrl`/`Cmd` + `Enter`: All Engines picker
+- `Shift` + `Enter`: newline inside the box
+- `Esc`: clear
+
+Quick links below your most frequently visited websites or custom bookmarks for easy access.
+
+## Setup
+
+No build step required.
+
+1. Clone or download the repo.
+2. Open `index.html` in a browser.
+3. Set `index.html` as your browser's startup or new tab page.
